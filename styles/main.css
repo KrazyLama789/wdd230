@@ -1,0 +1,24 @@
+body {
+    max-width: 600px;
+    font-size: 18px;
+    margin: 1.5rem auto;
+}
+header, footer {
+    background-color: #3377AA;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+main {
+    padding: 20px
+}
+footer {
+    text-align: center;
+    vertical-align: center;
+}
