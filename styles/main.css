@@ -2,6 +2,7 @@ body {
     max-width: 600px;
     font-size: 18px;
     margin: 1.5rem auto;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 header, footer {
     background-color: #3377AA;
