@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: rgba(0, 199, 234, 0.941);
+}
+header, footer {
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    justify-content: space-evenly;
+}
+article {
+    background-color: lightgray;
+    border: .5rem;
+    border-color: darkgray;
+    padding: 1rem;
+}
+image {
+    max-width: 100%;
+    display: block;
+    margin: 0.5rem;
+}
