@@ -1,5 +1,11 @@
-@media only screen and (min-width: 480px) {
-  body {
-    background-color: coral;
-  }
+@media only screen and (min-width: 32.5em) {
+    header, footer {
+        border-radius: 10px;
+    }
+    main {
+        padding: 20px;
+    }
+    body {
+        margin: 1.5rem auto;
+    }
 }
