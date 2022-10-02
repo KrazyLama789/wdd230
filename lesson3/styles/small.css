@@ -1,0 +1,39 @@
+#logo {
+  max-width: 80px;
+}
+#color-scheme {
+  max-width: 400px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+h2 {
+  font-size: 1.275em;
+}
+header,
+footer {
+  background-color: none;
+  text-align: center;
+  color: black;
+  padding: 0.5rem;
+  margin: 0;
+}
+main {
+  background-color: white;
+}
+img {
+  max-width: 100%;
+  display: block;
+}

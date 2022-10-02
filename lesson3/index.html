@@ -10,18 +10,40 @@
       content="The home page for the demo project of a Utah County Chamber of Commerce, 
       by Mary Goff, BYU-Idaho 2022."
     />
-    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/small.css" rel="stylesheet" />
+    <link href="styles/medium.css" rel="stylesheet" />
+    <link href="styles/large.css" rel="stylesheet" />
+    <script src="../scripts/dates.js" defer></script>
   </head>
   <body>
-    <ul>
+    <header>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="target-audience.html">Target Audience</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="color-scheme.html">Color Scheme</a></li>
+    </header>
+    <main>
+      <ul>
         <li>Site Name: Utah County Chamber</li>
         <li>Domain Name: utcountychamber.com</li>
-        <li>Site Purpose: To govern the mercantile development, growth, 
-          and cpnnections within the Utah County jurisdiction. </li>
-        <li>Icon: <img id="logo" src="images/utah-county.png" alt="Utah Map with Utah County in red" /></li>
-        <li><a href="target-audience.html">Target Audience</a></li>
-        <li><a href="typography.html">Typography</a></li>
-        <li><a href="color-scheme.html">Color Scheme</a></li>
-    </ul>
+        <li>
+          Site Purpose: To govern the mercantile development, growth, and
+          connections within the Utah County jurisdiction.
+        </li>
+        <li>
+          Icon:
+          <img
+            id="logo"
+            src="images/utah-county.png"
+            alt="Utah Map with Utah County in red"
+          />
+        </li>
+      </ul>
+    </main>
+    <footer>
+      &copy; <span id="currentyear"></span> | Mary Goff | Utah
+      <br />
+      Last Updated: <span id="lastupdated">Not Avalable</span>
+    </footer>
   </body>
 </html>
