@@ -5,13 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Target Audience</title>
+    <meta
+      name="description"
+      content="The home page for the demo project of a Utah County Chamber of Commerce, 
+      by Mary Goff, BYU-Idaho 2022."
+    />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link href="styles/small.css" rel="stylesheet" />
+    <link href="styles/medium.css" rel="stylesheet" />
+    <link href="styles/large.css" rel="stylesheet" />
+    <script src="../scripts/dates.js" defer></script>
   </head>
   <body>
     <header>
-      <li><a href="index.html">Home Page</a></li>
-      <li><a href="target-audience.html">Target Audience</a></li>
-      <li><a href="typography.html">Typography</a></li>
-      <li><a href="color-scheme.html">Color Scheme</a></li>
+      <div id="banner">
+        <img
+          id="logo"
+          src="images/utah-county.png"
+          alt="Utah Map with Utah County in red"
+        />
+        <h1>
+          Utah County <br />
+          Chamber
+        </h1>
+      </div>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="target-audience.html">Target Audience</a></li>
+          <li><a href="typography.html">Typography</a></li>
+          <li><a href="color-scheme.html">Color Scheme</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <ul>
@@ -51,9 +76,9 @@
       </ul>
     </main>
     <footer>
-        &copy; <span id="currentyear"></span> | Mary Goff | Utah
-        <br />
-        Last Updated: <span id="lastupdated">Not Avalable</span>
-      </footer>
+      &copy; <span id="currentyear"></span> | Mary Goff | Utah
+      <br />
+      Last Updated: <span id="lastupdated">Not Avalable</span>
+    </footer>
   </body>
 </html>
