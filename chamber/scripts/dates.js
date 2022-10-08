@@ -1,5 +1,5 @@
 // Timestamp of last updated.
-document.querySelector(".lastupdated").textContent = document.lastModified;
+document.querySelector(".lastupdated").textContent = "Last Updated: " + document.lastModified;
 
 // Current year
 const date = new Date();

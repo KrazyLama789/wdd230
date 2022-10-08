@@ -69,8 +69,25 @@ header .date {
 }
 
 nav {
+  display: flex;
+  align-items: center;
+}
+.fa {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: .3rem;
   display: inline-block;
 }
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
 nav button {
   margin: 0.2rem 2vw;
   background: transparent;
@@ -118,6 +135,21 @@ nav ul.open {
   display: block;
 }
 
+main {
+  display: grid;
+  gap: 10px;
+}
+main section {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2vw;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#join,
+#spot3 {
+  display: none;
+}
+
 footer {
   background-color: #eee;
+  text-align: center;
 }
