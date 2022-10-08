@@ -12,6 +12,9 @@ html {
 }
 body {
   margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 h1 {
@@ -31,11 +34,25 @@ footer {
   padding: 2vw;
   margin: 0;
 }
+
 header {
   background-color: #eee;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
+  justify-items: center;
+  align-items: flex-end;
+  flex: 0 0 50%;
+}
+header .date {
+  grid-column: 1/-1;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 2vw;
+  width: 100%;
 }
 
 #banner {
@@ -58,7 +75,7 @@ nav button {
   margin: 0.2rem 2vw;
   background: transparent;
   border: none;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #555;
 }
 nav ul {
@@ -99,4 +116,8 @@ nav ul.open {
 }
 #hamburgerButton.open span:nth-child(2) {
   display: block;
+}
+
+footer {
+  background-color: #eee;
 }
