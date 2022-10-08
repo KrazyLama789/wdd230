@@ -79,10 +79,12 @@ nav {
   text-decoration: none;
   padding: .3rem;
   display: inline-block;
+  margin-top: .5rem;
 }
 .fa-facebook {
   background: #3B5998;
   color: white;
+  margin-right: 4vw;
 }
 .fa-twitter {
   background: #55ACEE;
