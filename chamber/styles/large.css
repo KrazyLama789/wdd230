@@ -1,0 +1,7 @@
+/*65rem is also 1828px when basefont is 16px*/
+@media only screen and (min-width: 64rem) {
+    nav ul li a {
+      padding: .5rem 1rem;
+    }
+    
+  } /* end largeg */
