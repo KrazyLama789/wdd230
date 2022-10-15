@@ -26,6 +26,10 @@ h6 {
   font-weight: 300;
 }
 
+#logo {
+  max-height: 5rem;
+}
+
 header,
 main,
 footer {
@@ -52,7 +56,7 @@ header {
     align-items: flex-end;
     justify-content: center;
 }
-#logo {
+#title #logo {
   max-height: 4rem;
   grid-area: logo;
 }
@@ -71,21 +75,6 @@ header {
 #social {
   grid-area: social;
 }
-
-header .date {
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin: 2vw 0 0 0;
-  width: 100%;
-}
-
-nav {
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-}
 .fa {
   background: transparent;
   border: none;
@@ -103,6 +92,12 @@ nav {
 .fa-twitter {
   background: #55acee;
   color: white;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
 }
 nav button {
   background: transparent;
@@ -150,6 +145,15 @@ nav ul.open {
   display: block;
 }
 
+header .date {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 2vw 0 0 0;
+  width: 100%;
+}
+
 main {
   display: grid;
   gap: 10px;
@@ -160,6 +164,7 @@ main section {
   background-color: rgba(0, 0, 0, 0.05);
   min-height: 10rem;
 }
+
 #spotlights {
   display: grid;
 }
@@ -172,4 +177,10 @@ main section {
 footer {
   background-color: #eee;
   text-align: center;
+}
+
+foot {
+  padding: .35rem;
+  margin-top: 2rem;
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
 }

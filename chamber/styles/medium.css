@@ -32,4 +32,12 @@
   #spotlights {
     grid-template-columns: 1fr 1fr;
   }
+
+  info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding:0;
+  }
 } /* end medium */
