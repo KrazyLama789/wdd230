@@ -1,7 +1,19 @@
 /*65rem is also 1828px when basefont is 16px*/
 @media only screen and (min-width: 64rem) {
-    nav ul li a {
-      padding: .5rem 1rem;
-    }
-    
-  } /* end largeg */
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+  main {
+    grid-template-areas:
+      "event call call spot"
+      "wet call call spot"
+      "join news news spot";
+  }
+  #spotlights {
+    grid-template-columns: 1fr;
+  }
+  #join,
+  #spot3 {
+    display: block;
+  }
+} /* end largeg */

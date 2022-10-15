@@ -15,4 +15,35 @@
     border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
 
+  main {
+    grid-template-areas:
+      "call call call"
+      "news news news"
+      "spot spot spot"
+      "join join join"
+      "event event wet";
+  }
+  /* Main Grid Items */
+  main #call-to-action {
+    grid-area: call;
+  }
+  main #event {
+    grid-area: event;
+  }
+  main #weather {
+    grid-area: wet;
+  }
+  main #news-release {
+    grid-area: news;
+  }
+  main #spotlights {
+    grid-area: spot;
+  }
+  main #join {
+    grid-area: join;
+  }
+
+  #spotlights {
+    grid-template-columns: 1fr 1fr;
+  }
 } /* end medium */

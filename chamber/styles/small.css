@@ -145,7 +145,12 @@ main section {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 2vw;
   background-color: rgba(0, 0, 0, 0.05);
+  min-height: 10rem;
 }
+#spotlights {
+  display: grid;
+}
+
 #join,
 #spot3 {
   display: none;
