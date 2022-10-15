@@ -36,7 +36,7 @@ header {
   background-color: #eee;
 }
 
-#banner {
+#top-banner {
   display: grid;
   grid-template-areas: "title social nav";
   align-items: center;

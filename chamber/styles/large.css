@@ -1,6 +1,6 @@
 /*65rem is also 1828px when basefont is 16px*/
 @media only screen and (min-width: 64rem) {
-  #banner {
+  #top-banner {
     align-items: flex-end;
   }
   nav button {
