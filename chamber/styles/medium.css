@@ -1,19 +1,5 @@
 /*35rem is also 560px when basefont is 16px*/
 @media only screen and (min-width: 35rem) {
-  nav button {
-    display: none;
-  }
-  nav ul#primaryNav {
-    display: flex;
-    margin-left: 2vw;
-  }
-  nav ul li:nth-child(1) {
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-  }
-  nav ul li a {
-    border: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-  }
 
   main {
     grid-template-areas:

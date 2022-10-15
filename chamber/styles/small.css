@@ -13,8 +13,6 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 
 h1 {
@@ -34,41 +32,57 @@ footer {
   padding: 2vw;
   margin: 0;
 }
-
 header {
   background-color: #eee;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  align-content: center;
-  justify-items: center;
-  align-items: flex-end;
-  flex: 0 0 50%;
 }
+
+#banner {
+  display: grid;
+  grid-template-areas: "title social nav";
+  align-items: center;
+  justify-content: space-between;
+}
+
+#title {
+  grid-area: title;
+  display: grid;
+  grid-template-areas:
+    "logo large"
+    "logo small";
+    align-items: flex-end;
+    justify-content: center;
+}
+#logo {
+  max-height: 4rem;
+  grid-area: logo;
+}
+#title h1 {
+  grid-area: large;
+  font-size: 1.8rem;
+  padding: 0 .5rem;
+  margin: 0;
+}
+#title h3 {
+  grid-area: small;
+  padding: 0 .5rem;
+  margin: 0;
+}
+
+#social {
+  grid-area: social;
+}
+
 header .date {
-  grid-column: 1/-1;
   border-top: 2px solid rgba(0, 0, 0, 0.2);
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.1);
   padding: 10px;
-  margin: 2vw;
+  margin: 2vw 0 0 0;
   width: 100%;
 }
 
-#banner {
-  display: flex;
-  align-items: center;
-  height: 4rem;
-}
-#banner img {
-  margin-right: 1rem;
-  max-height: 100%;
-}
-#banner h1 {
-  font-size: 1.5rem;
-}
-
 nav {
+  grid-area: nav;
   display: flex;
   align-items: center;
 }
@@ -77,21 +91,20 @@ nav {
   border: none;
   font-size: 2rem;
   text-decoration: none;
-  padding: .3rem;
+  padding: 0.3rem;
   display: inline-block;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
-  margin-right: 4vw;
+  margin-right: .2rem;
 }
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
-} 
+}
 nav button {
-  margin: 0.2rem 2vw;
   background: transparent;
   border: none;
   font-size: 3rem;
