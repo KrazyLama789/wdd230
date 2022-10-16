@@ -33,7 +33,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  info {
+  #footer-info {
     display: flex;
     justify-content: center;
     align-items: center;
