@@ -180,7 +180,6 @@ footer {
 }
 
 #class-info {
-  padding: 0.35rem;
-  margin-top: 2rem;
+  padding: 2vw 0 0 0;
   border-top: 2px solid rgba(0, 0, 0, 0.05);
 }

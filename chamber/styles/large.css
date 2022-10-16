@@ -2,6 +2,7 @@
 @media only screen and (min-width: 64rem) {
   #top-banner {
     align-items: flex-end;
+    grid-template-areas: "title nav social";
   }
   nav button {
     display: none;
