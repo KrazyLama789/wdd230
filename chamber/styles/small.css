@@ -156,7 +156,7 @@ header .date {
   border-bottom: 2px solid rgba(246, 246, 246, 0.7);
   background-color: rgba(16, 142, 196, 0.6);
   padding: 10px 0;
-  margin: 2vw 0;
+  margin: 2vw 0 0 0;
   width: 100%;
   color: rgba(246, 246, 246);
   text-align: center;

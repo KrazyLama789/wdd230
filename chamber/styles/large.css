@@ -7,7 +7,7 @@
   nav button {
     display: none;
   }
-  nav ul#primaryNav {
+  nav ul#primary-nav {
     display: flex;
     margin-left: 2vw;
   }
