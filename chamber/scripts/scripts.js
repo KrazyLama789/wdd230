@@ -1,9 +1,8 @@
 function toggleMenu() {
-    console.log('it worked')
-    document.querySelector("#primaryNav").classList.toggle("open");
-    document.querySelector("#hamburgerButton").classList.toggle("open");
+  document.querySelector("#primary-nav").classList.toggle("open");
+  document.querySelector("#hamburger-button").classList.toggle("open");
 }
 
-const x = document.querySelector("#hamburgerButton");
+const x = document.querySelector("#hamburger-button");
 
 x.onclick = toggleMenu;

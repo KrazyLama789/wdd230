@@ -11,3 +11,15 @@ const datefield = document.querySelector(".date").textContent = new Intl.DateTim
   dateStyle: "full",
 }).format(date);
 
+// Toggles weekly banner
+function toggleBanner() {
+  console.log('banner')
+  document.querySelector("#weekly-banner").classList.toggle("open");
+}
+
+const day = date.getDay();
+console.log(day);
+if (day == 1 || day == 2) {
+  toggleBanner();
+  console.log('toggle');
+}

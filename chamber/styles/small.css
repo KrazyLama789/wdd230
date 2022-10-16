@@ -7,13 +7,16 @@ body {
 h1,
 h2 {
   font-weight: 600;
-  margin:0;
+  margin: 0;
 }
 h3,
 h4,
 h5,
 h6 {
   font-weight: 300;
+}
+a {
+  color: inherit;
 }
 
 .logo {
@@ -26,9 +29,21 @@ footer {
   padding: 2vw;
   margin: 0;
 }
+
 header {
   background-color: rgba(2, 50, 70, 1);
   color: rgba(246, 246, 246, 0.9);
+}
+
+#weekly-banner {
+  display: none;
+  padding: 2vw;
+  background-color: rgba(16, 142, 196, 0.9);
+  color: rgb(246, 246, 246);
+  text-align: center;
+}
+#weekly-banner.open {
+  display: block;
 }
 
 #top-banner {
@@ -122,17 +137,17 @@ nav ul.open {
   display: block;
 }
 
-#hamburgerButton span:nth-child(1) {
+#hamburger-button span:nth-child(1) {
   display: block;
 }
-#hamburgerButton span:nth-child(2) {
+#hamburger-button span:nth-child(2) {
   display: none;
 }
 
-#hamburgerButton.open span:nth-child(1) {
+#hamburger-button.open span:nth-child(1) {
   display: none;
 }
-#hamburgerButton.open span:nth-child(2) {
+#hamburger-button.open span:nth-child(2) {
   display: block;
 }
 
@@ -158,12 +173,11 @@ main > * {
 main section {
   padding: 2vw;
   min-height: 10rem;
-} 
+}
 main section h1 {
   color: rgba(2, 50, 70, 1);
-  margin:0;
+  margin: 0;
 }
-
 
 #call-to-action {
   background-image: url("../images/t-m-bqGdhrAftLc-unsplash.jpg");
@@ -171,14 +185,14 @@ main section h1 {
   background-position: top;
   position: relative;
 }
-#call-to-action button{
+#call-to-action button {
   padding: 10px 15px;
   border-radius: 20px;
-  border:none;
+  border: none;
   position: absolute;
   bottom: 2vw;
   right: 2vw;
-  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, .8));
+  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.8));
 }
 
 #spotlights {
@@ -187,15 +201,15 @@ main section h1 {
   padding: 10px;
 }
 .spots {
-  background-color: rgba(2, 50, 70, .4);
+  background-color: rgba(2, 50, 70, 0.4);
   border: 1px solid rgb(246, 246, 246);
 }
 
 #join button {
   width: 100%;
   border-radius: 10px;
-  border:none;
-  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, .8));
+  border: none;
+  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.8));
 }
 
 #join,
