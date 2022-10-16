@@ -4,5 +4,4 @@ function toggleMenu() {
 }
 
 const x = document.querySelector("#hamburger-button");
-
 x.onclick = toggleMenu;
