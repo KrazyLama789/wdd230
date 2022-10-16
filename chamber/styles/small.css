@@ -1,24 +1,14 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-/*----------- apply a natural box layout model to all elements --------------*/
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   font-weight: 600;
+  margin:0;
 }
-h2,
 h3,
 h4,
 h5,
@@ -37,12 +27,13 @@ footer {
   margin: 0;
 }
 header {
-  background-color: #eee;
+  background-color: rgba(2, 50, 70, 1);
+  color: rgba(246, 246, 246, 0.9);
 }
 
 #top-banner {
   display: grid;
-  grid-template-areas: "title social nav";
+  grid-template-areas: "nav title social";
   align-items: center;
   justify-content: space-between;
 }
@@ -103,7 +94,7 @@ nav button {
   background: transparent;
   border: none;
   font-size: 3rem;
-  color: #555;
+  color: #f6f6f6;
 }
 nav ul {
   list-style-type: none;
@@ -114,12 +105,12 @@ nav ul li a {
   display: block;
   padding: 0.8rem 2vw;
   text-decoration: none;
-  color: #333;
+  color: rgba(246, 246, 246, 0.9);
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 nav ul li.active a {
   background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: #f6f6f6;
 }
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
@@ -146,27 +137,65 @@ nav ul.open {
 }
 
 header .date {
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin: 2vw 0 0 0;
+  border-top: 2px solid rgba(246, 246, 246, 0.7);
+  border-bottom: 2px solid rgba(246, 246, 246, 0.7);
+  background-color: rgba(16, 142, 196, 0.6);
+  padding: 10px 0;
+  margin: 2vw 0;
   width: 100%;
+  color: rgba(246, 246, 246);
+  text-align: center;
 }
 
 main {
   display: grid;
   gap: 10px;
 }
+main > * {
+  background-color: rgba(16, 142, 196, 0.9);
+  color: rgb(246, 246, 246);
+}
 main section {
-  border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 2vw;
-  background-color: rgba(0, 0, 0, 0.05);
   min-height: 10rem;
+} 
+main section h1 {
+  color: rgba(2, 50, 70, 1);
+  margin:0;
+}
+
+
+#call-to-action {
+  background-image: url("../images/t-m-bqGdhrAftLc-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+#call-to-action button{
+  padding: 10px 15px;
+  border-radius: 20px;
+  border:none;
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, .8));
 }
 
 #spotlights {
   display: grid;
+  gap: 0;
+  padding: 10px;
+}
+.spots {
+  background-color: rgba(2, 50, 70, .4);
+  border: 1px solid rgb(246, 246, 246);
+}
+
+#join button {
+  width: 100%;
+  border-radius: 10px;
+  border:none;
+  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, .8));
 }
 
 #join,
@@ -175,11 +204,12 @@ main section {
 }
 
 footer {
-  background-color: #eee;
+  background-color: rgba(2, 50, 70, 1);
+  color: rgb(246, 246, 246);
   text-align: center;
 }
 
 #class-info {
   padding: 2vw 0 0 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.05);
+  border-top: 2px solid rgb(246, 246, 246, 0.7);
 }
