@@ -17,7 +17,7 @@
   main #event {
     grid-area: event;
   }
-  main #weather {
+  main .weather {
     grid-area: wet;
   }
   main #news-release {
@@ -28,6 +28,7 @@
   }
   main #join {
     grid-area: join;
+    display: block;
   }
 
   #spotlights {

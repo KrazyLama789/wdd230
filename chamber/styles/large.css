@@ -26,7 +26,6 @@
   #spotlights {
     grid-template-columns: 1fr;
   }
-  #join,
   #spot3 {
     display: block;
   }

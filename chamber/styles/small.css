@@ -188,13 +188,9 @@ main section.hero {
   position: relative;
 }
 main section.hero button {
-  padding: 10px 15px;
-  border-radius: 20px;
-  border: none;
   position: absolute;
   bottom: 2vw;
   right: 2vw;
-  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.8));
 } 
 
 #spotlights {
@@ -206,12 +202,17 @@ main section.hero button {
   background-color: rgba(2, 50, 70, 0.4);
   border: 1px solid rgb(246, 246, 246);
 }
-
+main .styled-button {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(2, 50, 70, 0.8);
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.8));
+}
 #join button {
   width: 100%;
-  border-radius: 10px;
-  border: none;
-  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.8));
 }
 
 #join,
