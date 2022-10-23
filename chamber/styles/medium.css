@@ -11,8 +11,9 @@
       "event event wet";
   }
   /* Main Grid Items */
-  main .hero {
+  main section.hero {
     grid-area: hero;
+    background-image: url("../images/wdd230-org700.jpg");
   }
   main #event {
     grid-area: event;

@@ -23,6 +23,9 @@
       "wet hero hero spot"
       "join news news spot";
   }
+  main section.hero {
+    background-image: url("../images/wdd230-org550.jpg");
+  }
   #spotlights {
     grid-template-columns: 1fr;
   }

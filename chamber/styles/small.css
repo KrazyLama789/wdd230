@@ -182,9 +182,11 @@ main section h1 {
 }
 
 main section.hero {
-  background-image: url("../images/t-m-bqGdhrAftLc-unsplash.jpg");
+  /* background-image: url("../images/t-m-bqGdhrAftLc-unsplash.jpg"); */
+  background-image: url("../images/wdd230-org400.jpg");
   background-size: cover;
-  background-position: top;
+  /* background-position: top; */
+  background-position: 50% 35%;
   position: relative;
 }
 main section.hero button {
@@ -196,11 +198,13 @@ main section.hero button {
 #spotlights {
   display: grid;
   gap: 0;
-  padding: 10px;
+  justify-content: center;
+  align-content: space-evenly;
 }
 .spots {
   background-color: rgba(2, 50, 70, 0.4);
   border: 1px solid rgb(246, 246, 246);
+  margin: 0 5px;
 }
 main .styled-button {
   padding: 1rem;
