@@ -18,8 +18,8 @@
   }
   main {
     grid-template-areas:
-      "event call call spot"
-      "wet call call spot"
+      "event hero hero spot"
+      "wet hero hero spot"
       "join news news spot";
   }
   #spotlights {

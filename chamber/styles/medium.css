@@ -3,15 +3,15 @@
 
   main {
     grid-template-areas:
-      "call call call"
+      "hero hero hero"
       "news news news"
       "spot spot spot"
       "join join join"
       "event event wet";
   }
   /* Main Grid Items */
-  main #call-to-action {
-    grid-area: call;
+  main .hero {
+    grid-area: hero;
   }
   main #event {
     grid-area: event;

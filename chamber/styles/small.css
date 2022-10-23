@@ -165,6 +165,8 @@ header .date {
 main {
   display: grid;
   gap: 10px;
+  max-width: 1100px;
+  margin:auto;
 }
 main > * {
   background-color: rgba(16, 142, 196, 0.9);
@@ -179,13 +181,13 @@ main section h1 {
   margin: 0;
 }
 
-#call-to-action {
+main section.hero {
   background-image: url("../images/t-m-bqGdhrAftLc-unsplash.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
 }
-#call-to-action button {
+main section.hero button {
   padding: 10px 15px;
   border-radius: 20px;
   border: none;
@@ -193,7 +195,7 @@ main section h1 {
   bottom: 2vw;
   right: 2vw;
   filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.8));
-}
+} 
 
 #spotlights {
   display: grid;
