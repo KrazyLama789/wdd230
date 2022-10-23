@@ -1,5 +1,5 @@
-/*65rem is also 1828px when basefont is 16px*/
-@media only screen and (min-width: 64rem) {
+/*62rem is also 992px when basefont is 16px*/
+@media only screen and (min-width: 62rem) {
   #top-banner {
     align-items: flex-end;
     grid-template-areas: "title nav social";
@@ -13,10 +13,11 @@
   }
   nav ul li a {
     padding: 0.5rem 1rem;
-    border:none;
+    border: none;
     font-size: 1.5rem;
   }
   main {
+    max-width: 1200px;
     grid-template-areas:
       "event hero hero spot"
       "wet hero hero spot"

@@ -1,7 +1,8 @@
 /*35rem is also 560px when basefont is 16px*/
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 28rem) {
 
   main {
+    max-width: 700px;
     grid-template-areas:
       "hero hero hero"
       "news news news"
