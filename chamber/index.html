@@ -25,11 +25,11 @@
         <link rel="shortcut icon" href="favicon.ico">
         <script src="scripts/scripts.js" defer></script>
         <script src="scripts/dates.js" defer></script>
+        <script src="scripts/windchill.js" defer></script>
     </head>
     <body>
         <div id="weekly-banner"><h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2></div>
         <header>
-            
             <div id="top-banner">
                 <div id="title">
                     <img
@@ -70,7 +70,9 @@
             </section>
             <section id="weather">
                 <h2>Weather</h2>
-                <p></p>
+                <p class="temp">Temperature: <span></span>°F</p>
+                <p>Wind Speed: <span class="wind-speed"></span>mph</p>
+                <p>Wind Chill: <span class="wind-chill">N/A</span>°</p>
             </section>
             <section id="news-release">
                 <h2>News Release</h2>
