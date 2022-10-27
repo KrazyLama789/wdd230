@@ -197,14 +197,13 @@ main section.hero button {
 
 #spotlights {
   display: grid;
-  gap: 0;
-  justify-content: center;
+  gap: 1vw;
   align-content: space-evenly;
+  padding: 2vw;
 }
 .spots {
   background-color: rgba(2, 50, 70, 0.4);
   border: 1px solid rgb(246, 246, 246);
-  margin: 0 5px;
 }
 main .styled-button {
   padding: 1rem;
