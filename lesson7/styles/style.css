@@ -3,8 +3,13 @@ main {
   width: 300px;
   text-align: center;
 }
+img[data-src] {
+  filter: blur(0.2em);
+}
 img {
+  filter: blur(0em);
+  transition: filter 0.5s;
   display: block;
-  margin: 0 auto;
+  padding: 5px 0;
   width: 100%;
 }
