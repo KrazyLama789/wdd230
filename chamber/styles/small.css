@@ -167,6 +167,9 @@ main {
   gap: 10px;
   margin:auto;
 }
+main img {
+  max-width: 100%;
+}
 main > * {
   background-color: rgba(16, 142, 196, 0.9);
   color: rgb(246, 246, 246);
