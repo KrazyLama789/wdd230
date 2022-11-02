@@ -163,6 +163,7 @@ header .date {
 }
 
 main {
+  max-width: 500px;
   display: grid;
   gap: 10px;
   margin:auto;
