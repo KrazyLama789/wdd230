@@ -26,7 +26,7 @@
       "wet hero hero spot"
       "join news news spot";
   }
-  main section.hero {
+  main article.hero {
     background-image: url("../images/wdd230-org550.jpg");
   }
   #spotlights {

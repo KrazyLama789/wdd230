@@ -174,16 +174,16 @@ main > * {
   background-color: rgba(16, 142, 196, 0.9);
   color: rgb(246, 246, 246);
 }
-main section {
+main article {
   padding: 2vw;
   min-height: 10rem;
 }
-main section h1 {
+main article h1 {
   color: rgba(2, 50, 70, 1);
   margin: 0;
 }
 
-main section.hero {
+main article.hero {
   /* background-image: url("../images/t-m-bqGdhrAftLc-unsplash.jpg"); */
   background-image: url("../images/wdd230-org400.jpg");
   background-size: cover;
@@ -191,7 +191,7 @@ main section.hero {
   background-position: 50% 35%;
   position: relative;
 }
-main section.hero button {
+main article.hero button {
   position: absolute;
   bottom: 2vw;
   right: 2vw;
