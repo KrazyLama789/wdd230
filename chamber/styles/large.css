@@ -21,10 +21,11 @@
     margin: auto;
   }
   main {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   main #event {
     grid-row: 1;
+    grid-column: 1;
   }
   main article.hero {
     grid-row: 1/3;
