@@ -239,6 +239,25 @@ main .styled-button {
 #discover article img {
   padding-bottom: 1rem;
 }
+#last-visited {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  background-color: rgba(2, 50, 70, .8);
+  color: rgb(246, 246, 246);
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 400;
+}
+.exit {
+  font-size: small;
+  margin-left: 5px;
+  background-color: red;
+  padding: 1px 4px 2px;
+  border: none;
+  border-radius: 50%;
+  color: rgb(246, 246, 246);
+}
 
 /*Footer Info*/
 footer {
