@@ -29,7 +29,12 @@ footer {
   padding: 2vw;
   margin: 0;
 }
+.align {
+  max-width: 500px;
+  margin:auto;
+}
 
+/*Header Info*/
 header {
   background-color: rgba(2, 50, 70, 1);
   color: rgba(246, 246, 246, 0.9);
@@ -162,16 +167,11 @@ header .date {
   text-align: center;
 }
 
-main {
-  max-width: 500px;
-  display: grid;
-  gap: 10px;
-  margin:auto;
-}
+/*Main Info*/
 main img {
   max-width: 100%;
 }
-main > * {
+main section > * {
   background-color: rgba(16, 142, 196, 0.9);
   color: rgb(246, 246, 246);
 }
@@ -183,8 +183,22 @@ main article h1 {
   color: rgba(2, 50, 70, 1);
   margin: 0;
 }
+main .styled-button {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(2, 50, 70, 0.8);
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.8));
+}
 
-main article.hero {
+/*Home Style*/
+#home {
+  display: grid;
+  gap: 10px;
+}
+.hero {
   /* background-image: url("../images/t-m-bqGdhrAftLc-unsplash.jpg"); */
   background-image: url("../images/wdd230-org400.jpg");
   background-size: cover;
@@ -192,7 +206,7 @@ main article.hero {
   background-position: 50% 35%;
   position: relative;
 }
-main article.hero button {
+.hero button {
   position: absolute;
   bottom: 2vw;
   right: 2vw;
@@ -208,15 +222,6 @@ main article.hero button {
   background-color: rgba(2, 50, 70, 0.4);
   border: 1px solid rgb(246, 246, 246);
 }
-main .styled-button {
-  padding: 1rem;
-  font-weight: 600;
-  font-size: 1rem;
-  color: rgba(2, 50, 70, 0.8);
-  border: none;
-  border-radius: 10px;
-  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.8));
-}
 #join button {
   width: 100%;
 }
@@ -226,6 +231,12 @@ main .styled-button {
   display: none;
 }
 
+/*Discover Info*/
+#discover {
+  display: grid;
+  gap: 10px;
+}
+/*Footer Info*/
 footer {
   background-color: rgba(2, 50, 70, 1);
   color: rgb(246, 246, 246);

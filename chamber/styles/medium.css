@@ -1,9 +1,8 @@
 /*35rem is also 608px when basefont is 16px*/
 @media only screen and (min-width: 38rem) {
 
-  main {
+  .align {
     max-width: 700px;
-    grid-template-columns: 1fr 1fr;
   }
   /* Main Grid Items */
   main article.hero {
@@ -33,6 +32,10 @@
   }
 
   #spotlights {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #discover {
     grid-template-columns: 1fr 1fr;
   }
 
