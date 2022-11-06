@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--External Refrences-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Page Information-->
+    <title>Join Us</title>
+    <meta name="description" content="The Join form page of a chamber of commerce
+                demo website for
+                WDD230 term project.">
+    <!--Project Files-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <div class="align" id="weekly-banner">
+        <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+    </div>
+    <header>
+        <div class="top-banner align">
+            <div class="trade-mark">
+                <img class="logo" src="images/small-utah.webp" alt="Utah Map with Utah County in red">
+                <h1>Utah County</h1>
+                <h3>Chamber</h3>
+            </div>
+            <div id="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+
+            <nav id="main-nav">
+                <button id="hamburger-button"><span>&#9776;</span><span>X</span></button>
+                <ul id="primary-nav">
+                    <li></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li class="active"><a href="join.html">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="date align"></div>
+    </header>
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First name*<input type="text" name="fname" required></label>
+                <label class="top">Last name*<input type="text" name="lname" required></label>
+                <label class="top">Buisness Position<input type="text" pattern="[A-Za-z]{7,}"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="Someone@gmail.com"
+                        required></label>
+                <label class="top">Cellphone Number*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Buisness Name*<input type="text" required></label>
+                <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
+
+                <div>Software Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option value="">--Please Select-- &#9662;</option>
+                        <option value="software">Software Development</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info">Information Technology</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="buisness">Buisness Professional</option>
+                        <option value="security">Cyber Security</option>
+                    </select>
+                </label>
+
+
+                <label class="top">How Many Authors<input type="number" name="authors"></label>
+            </fieldset>
+            <label><input type="submit" value="Propose My Course" class="submitBtn"></label>
+        </form>
+
+    </main>
+    <footer>
+        <div class="align" id="footer-info">
+            <img class="logo" src="images/small-utah.webp" alt="Utah Map with Utah County in red">
+            <div>
+                <h2>Utah County Chamber of Commerce</h2>
+                <p>Utah, United States of America</p>
+            </div>
+            <div id="contact">
+                <p>info@utahcountycc.org</p>
+                <p>+(999) 999-9999</p>
+                <p>&#128204;<a href="https://goo.gl/maps/RBDpS97wJRSiAbWh7">Location
+                        Map</a></p>
+            </div>
+        </div>
+        <div class="align" id="class-info">
+            &copy; <span class="currentyear"></span> | Mary Goff | Utah |
+            WDD 230 |
+            <span class="lastupdated">Last Updated:</span>
+        </div>
+    </footer>
+</body>
+
+</html>

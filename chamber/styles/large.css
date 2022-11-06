@@ -56,7 +56,14 @@
     display: block;
   }
 
+  /*Discover Info*/
   #discover {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  /*Join Us Info*/
+  form label.sbs {
+    padding: .4rem 0;
+}
+
 } /* end largeg */
