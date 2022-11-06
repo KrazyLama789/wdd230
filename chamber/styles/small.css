@@ -236,6 +236,10 @@ main .styled-button {
   display: grid;
   gap: 10px;
 }
+#discover article img {
+  padding-bottom: 1rem;
+}
+
 /*Footer Info*/
 footer {
   background-color: rgba(2, 50, 70, 1);

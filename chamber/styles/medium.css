@@ -35,10 +35,15 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  /*Discover Info*/
   #discover {
     grid-template-columns: 1fr 1fr;
   }
+  #discover img:hover {
+    filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.4));
+  }
 
+  /*Footer Info*/
   #footer-info {
     display: flex;
     justify-content: center;
