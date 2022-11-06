@@ -54,8 +54,8 @@
         </div>
         <div class="date align"></div>
     </header>
-    <main>
-        <h1>Course Proposal Application</h1>
+    <main class="align">
+        <h1 class="header">Join Us</h1>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Applicant Information</legend>
@@ -66,42 +66,17 @@
                         required></label>
                 <label class="top">Cellphone Number*<input type="tel" name="phone" placeholder="1235551234" required></label>
                 <label class="top">Buisness Name*<input type="text" required></label>
-                <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
             </fieldset>
             <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
-                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
-
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+                <legend>Member Level</legend>
+                <div>Membership Options</div>
+                <label class="sbs"><input type="radio" name="member-level" value="np"> Non Profit</label>
+                <label class="sbs"><input type="radio" name="member-level" value="bronze"> Bronze</label>
+                <label class="sbs"><input type="radio" name="member-level" value="silver"> Silver</label>
+                <label class="sbs"><input type="radio" name="member-level" value="gold"> Gold</label>
+                <label class="top">Buisness Description<input type="text"></label>
             </fieldset>
-            <fieldset>
-                <legend>Funding</legend>
-                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
-                <label class="top">Course Subject
-                    <select name="subject">
-                        <option value="">--Please Select-- &#9662;</option>
-                        <option value="software">Software Development</option>
-                        <option value="creative">Creative Professional</option>
-                        <option value="info">Information Technology</option>
-                        <option value="data">Data Professional</option>
-                        <option value="construction">Construction</option>
-                        <option value="manufacturing">Manufacturing</option>
-                        <option value="buisness">Buisness Professional</option>
-                        <option value="security">Cyber Security</option>
-                    </select>
-                </label>
-
-
-                <label class="top">How Many Authors<input type="number" name="authors"></label>
-            </fieldset>
-            <label><input type="submit" value="Propose My Course" class="submitBtn"></label>
+            <label><input type="submit" value="Send My Application" class="submitBtn"></label>
         </form>
 
     </main>

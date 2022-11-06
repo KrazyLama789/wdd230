@@ -260,38 +260,41 @@ main .styled-button {
 }
 
 /*Join Us Info*/
+.header {
+  color: rgba(2, 50, 70, 1);
+  font-size: 3rem;
+}
 form fieldset {
   margin: 2rem 0;
-  border: 1px solid #445ba9;
+  border: 1px solid rgba(2, 50, 70, 1);
   border-radius: 10px;
   padding: .5rem 2%;
+  background-color: rgb(246, 246, 246);
 }
 form legend {
-  color: #445ba9;
+  color: rgba(2, 50, 70, 1);
   margin: 0 1rem;
   padding: 0 .5rem;
 }
 form label.top, form div {
   display: block;
-  padding-top: 1rem;
+  padding: 1rem 0 .5rem;
   color: #9c2c13;
-  font-size: .8rem;
 }
 form label.top input, form label.top select {
   display: block;
-  font-size: 1rem;
-  border: 1px solid #999;
+  border: 1px solid rgba(2, 50, 70, 1);
   border-radius: 4px;
   padding: .75rem;
-  color: #555;
+  color: rgba(2, 50, 70, 1);
   width: 100%;
   max-width: 20rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(16, 142, 196, 0.2);
 }
 form label.sbs {
   display: block;
   padding: .75rem 0;
-  color: #555;
+  color: rgba(2, 50, 70, 1);
 }
 form input.submitBtn {
   border: none;
@@ -299,8 +302,8 @@ form input.submitBtn {
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
-  margin: 0 0 2rem 2%;
-  width: 96%;
+  margin: 0 0 0 2%;
+  width: 100%;
   max-width: 20rem;
 }
 form label.top input:required {
