@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-color: rgb(255,255,255);
+}
+h1 {
+    color: rgb(77,77,150);
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 4px;
+}
+main {
+    padding: 1rem;
+    background-color: rgb(221,221,221);
+    filter: drop-shadow(0 0 1rem rgb(128,128,175));
+}
+section {
+    font-size: 18px;
+    background-color: rgb(185,185,204);
+    border: 1px solid rgb(128,128,175);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: auto;
+    max-width: 300px;
+    padding: 15px;
+}
+h2 {
+    color: rgb(77,77,150);
+    margin: 15px;
+}
+p {
+    margin: 0;
+}
