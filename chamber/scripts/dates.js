@@ -52,3 +52,11 @@ if (visDisplay != null) {
 
   visDisplay.textContent = `You last visited ${lastVis} days ago.`;
 }
+
+// Adds date to hidden form
+const hidden = document.querySelector('.hidden');
+
+if (hidden != null) {
+  hidden.textContent = date;
+  console.log('worked')
+}
