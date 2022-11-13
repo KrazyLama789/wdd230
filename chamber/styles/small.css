@@ -314,6 +314,24 @@ form label.top input:required:valid {
   border-left: green solid 6px;
 }
 
+/*Directory Info*/
+#directory {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+#directory article {
+  text-align: center;
+}
+#directory img {
+  max-height: 200px;
+  max-width: 200px;
+}
+#directory p {
+  padding: 10px;
+}
+#directory a {
+  overflow-wrap: break-word;
+}
+
 /*Footer Info*/
 footer {
   background-color: rgba(2, 50, 70, 1);
