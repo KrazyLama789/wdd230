@@ -6,8 +6,10 @@ function toggleMenu() {
 const ham = document.querySelector("#hamburger-button");
 ham.onclick = toggleMenu;
 
-const x = document.querySelector(".exit");
+// const x = document.querySelector(".exit");
 
-x.addEventListener('click', () => {
-  document.querySelector("#last-visited").style.display = "none"
-});
+// if (typeof x == 'object') {
+//   x.addEventListener("click", () => {
+//     document.querySelector("#last-visited").style.display = "none";
+//   });
+// }
