@@ -34,6 +34,11 @@ footer {
   margin:auto;
 }
 
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
 /*Header Info*/
 header {
   background-color: rgba(2, 50, 70, 1);
@@ -194,10 +199,6 @@ main .styled-button {
 }
 
 /*Home Style*/
-#home {
-  display: grid;
-  gap: 10px;
-}
 .hero {
   /* background-image: url("../images/t-m-bqGdhrAftLc-unsplash.jpg"); */
   background-image: url("../images/wdd230-org400.jpg");
@@ -213,8 +214,6 @@ main .styled-button {
 } 
 
 #spotlights {
-  display: grid;
-  gap: 8px;
   align-content: space-evenly;
   padding: 8px;
 }
@@ -232,12 +231,14 @@ main .styled-button {
 }
 
 /*Discover Info*/
-#discover {
-  display: grid;
-  gap: 10px;
-}
-#discover article img {
+article img {
   padding-bottom: 1rem;
+}
+article h2 {
+  margin-bottom: 1rem;
+}
+article p {
+  margin: 0;
 }
 #last-visited {
   position: fixed;
