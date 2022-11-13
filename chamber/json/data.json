@@ -1,0 +1,76 @@
+{
+  "businesses": [
+    {
+      "name": "Pioneer Book",
+      "address": "450 W Center St, Provo, UT 84601",
+      "phonenumber": "8012252665",
+      "weburl": "https://www.pioneerbook.com/",
+      "logoimage": "https://www.pioneerbook.com/assets/images/block/pioneer%20logo.PNG",
+      "memberlevel": 2
+    },
+    {
+      "name": "Hale Centre Theatre",
+      "address": "225 400 N, Orem, UT 84057",
+      "phonenumber": "8012268600",
+      "weburl": "https://www.haletheater.org/",
+      "logoimage": "https://www.haletheater.org/img/components/footer/hale-logo.png",
+      "memberlevel": 2
+    },
+    {
+      "name": "SCERA Center for the Arts",
+      "address": "745 S State St, Orem, UT 84058",
+      "phonenumber": "8012252787",
+      "weburl": "http://www.scera.org/",
+      "logoimage": "https://scera.org/wp-content/webp-express/webp-images/themes/scera/images/logo.png.webp",
+      "memberlevel": 3
+    },
+    {
+      "name": "Blendtec",
+      "address": "1206 S 1680 W, Orem, UT 84058",
+      "phonenumber": "+18012220888",
+      "weburl": "https://www.blendtec.com/",
+      "logoimage": "https://cdn.shopify.com/s/files/1/2182/0257/files/logo_white_blendtec_x53@2x.png?v=1628780150",
+      "memberlevel": 1
+    },
+    {
+      "name": "University Place",
+      "address": "575 E University Pkwy, Orem, UT 84097",
+      "phonenumber": "8012240694",
+      "weburl": "https://www.universityplaceorem.com/",
+      "logoimage": "https://www.universityplaceorem.com/wp-content/themes/up/images/logo.png",
+      "memberlevel": 3
+    },
+    {
+      "name": "Carol's Copy Center",
+      "address": "108 N State St, Orem, UT 84057",
+      "phonenumber": "8012258111",
+      "weburl": "https://carolscopycenter.wixsite.com/home",
+      "logoimage": "https://static.wixstatic.com/media/f6e357_25f2fceefb784ea6bb760a3a9e79aefd~mv2.png/v1/fill/w_193,h_163,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logoheader-01.png",
+      "memberlevel": 0
+    },
+    {
+      "name": "Evermore Park",
+      "address": "382 S Evermore Ln, Pleasant Grove, UT 84062",
+      "phonenumber": "8017962372",
+      "weburl": "https://www.evermore.com/",
+      "logoimage": "https://lirp.cdn-website.com/4304d9f6/dms3rep/multi/opt/Tan_Evermore-230w.png",
+      "memberlevel": 3
+    },
+    {
+      "name": "Thanksgiving Point",
+      "address": "3003 N Thanksgiving Way, Lehi, UT 84043",
+      "phonenumber": "8017682300",
+      "weburl": "http://thanksgivingpoint.org/",
+      "logoimage": "https://cdn.thanksgivingpoint.org/2021/10/12093048/logo-mobile.svg",
+      "memberlevel": 3
+    },
+    {
+      "name": "The Shops At Riverwoods",
+      "address": "4801 N University Ave, Provo, UT 84604",
+      "phonenumber": "8018028430",
+      "weburl": "https://shopsatriverwoods.com/",
+      "logoimage": "https://i0.wp.com/shopsatriverwoods.com/wp-content/uploads/2019/06/Logo.jpg?w=500&ssl=1",
+      "memberlevel": 3
+    }
+  ]
+}
