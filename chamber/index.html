@@ -23,6 +23,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -68,9 +69,10 @@
             </article>
             <article class="weather">
                 <h2>Weather</h2>
-                <p class="temp">Temperature: <span></span>°F</p>
-                <p>Wind Speed: <span class="wind-speed"></span>mph</p>
-                <p>Wind Chill: <span class="wind-chill">N/A</span>°</p>
+                <div><img src="" alt="" id="weather-icon"><p> <span id="temp"></span>&deg;F</p></div>
+                <h3><span id="condition">Weather Condition</span></h3>
+                <p>Wind Speed: <span id="wind-speed"></span>Mph</p>
+                <p>Wind Chill: <span id="wind-chill">N/A</span>°</p>
             </article>
             <article id="news-release">
                 <h2>News Release</h2>
