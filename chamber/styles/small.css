@@ -234,7 +234,7 @@ main .styled-button {
   font-size: large;
 }
 .weather #mediumtext {
-  border-bottom: 3px solid rgba(2, 50, 70, 0.4);
+  border-bottom: 3px solid rgba(2, 50, 70, 0.7);
   padding: 5px;
   margin: 10px;
   font-size: 1.3rem;
