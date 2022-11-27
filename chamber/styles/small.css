@@ -5,11 +5,12 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 600;
   margin: 0;
 }
-h3,
+
 h4,
 h5,
 h6 {
@@ -385,6 +386,12 @@ form ul {
 
 .list article:nth-child(even) {
 	background-color: rgba(2, 50, 70, 1);
+}
+
+/*Contact Info*/
+#contact .grid{
+  color: rgba(2, 50, 70, 1);
+  background-color: rgb(246, 246, 246, 0.7);
 }
 
 /*Footer Info*/

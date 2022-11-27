@@ -21,7 +21,7 @@
     margin: auto;
   }
   #home section {
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   #home article {
     padding: 1rem;
@@ -66,7 +66,10 @@
 
   /*Join Us Info*/
   form label.sbs {
-    padding: .4rem 0;
-}
-
+    padding: 0.4rem 0;
+  }
+  /*Contact Info*/
+  #contact .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 } /* end largeg */
