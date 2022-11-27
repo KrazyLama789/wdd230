@@ -24,6 +24,7 @@
         <script src="scripts/scripts.js" defer></script>
         <script src="scripts/dates.js" defer></script>
         <script src="scripts/weather.js" defer></script>
+        <script src="scripts/data.js" defer></script>
     </head>
 
     <body>
@@ -57,8 +58,8 @@
             </div>
             <div class="date align"></div>
         </header>
-        <main class="align">
-            <section id='home' class="grid">
+        <main id='home' class="align">
+            <section class="grid">
                 <article class="hero">
                     <h2>Welcome to Utah County</h2>
                     <button onclick="window.location.href='join.html';" class="styled-button">Join the Chamber</button>
@@ -85,17 +86,11 @@
                         </p>
                 </article>
                     <div id="spotlights" class="grid">
-                    <article class="spots">
-                            <h2>Thankful Transport</h2>
-                            <p>spotlight 1</p>
+                    <article class="spots" id="spot1">
                     </article>
-                    <article class="spots">
-                            <h2>Code Primera</h2>
-                            <p>spotlight 2</p>
+                    <article class="spots" id="spot2">
                     </article>
                     <article class="spots" id="spot3">
-                            <h2>Build A Treefort</h2>
-                            <p>spotlight 3</p>
                     </article>
                     </div>
                 <article id="join">
