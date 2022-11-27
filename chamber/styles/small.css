@@ -197,7 +197,7 @@ main .styled-button {
   color: rgba(2, 50, 70, 0.8);
   border: none;
   border-radius: 10px;
-  filter: drop-shadow(0 0 0.75rem rgba(2, 50, 70, 0.8));
+  filter: drop-shadow(0 0 0.5rem rgba(2, 50, 70, 0.7));
 }
 
 /*Home Style*/
@@ -336,21 +336,50 @@ form ul {
 }
 
 /*Directory Info*/
-#directory {
+.toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(16, 142, 196, 0.9);
+  padding: 2vw;
+  text-align: center;
+  gap: 10px;
+}
+/*Grid*/
+.directory {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-#directory article {
+.directory article {
   text-align: center;
 }
-#directory img {
+.directory img {
   max-height: 200px;
   max-width: 200px;
 }
-#directory p {
+.directory p {
   padding: 10px;
 }
-#directory a {
+.directory a {
   overflow-wrap: break-word;
+}
+/*List*/
+.list article {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+  min-height: 5rem;
+}
+
+.list article > * {
+	margin: auto;
+}
+
+.list article img {
+	display: none;
+}
+
+.list article:nth-child(even) {
+	background-color: rgba(2, 50, 70, 1);
 }
 
 /*Footer Info*/

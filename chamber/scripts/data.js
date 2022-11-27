@@ -1,4 +1,8 @@
 const cards = document.querySelector('.cards');
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".directory");
+
 
 fetch("json/data.json")
   .then(response => response.json())
@@ -39,3 +43,12 @@ function displayBusinesses(business) {
         // Append card to doccument
         document.querySelector('.cards').appendChild(card);
 }
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("directory");
+	display.classList.remove("list");
+});
+listbutton.addEventListener("click", () => {
+	display.classList.add("list");
+	display.classList.remove("directory");
+});
