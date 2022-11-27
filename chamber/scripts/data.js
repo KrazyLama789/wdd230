@@ -36,16 +36,22 @@ function displaySpotlights(members, i) {
   }
   const name = document.createElement("h2");
   const line = document.createElement('hr');
-  const phonenumber = document.createElement("p");
+  const numberlink = document.createElement('a');
+  const br = document.createElement('br');
   const weburl = document.createElement("a");
 
   name.textContent = business.name;
-  phonenumber.textContent = business.phonenumber;
+  numberlink.textContent = `Phone Number: ${business.phonenumber}`;
+  numberlink.setAttribute("href", `tel:${business.phonenumber}`);
+  console.log (numberlink);
+
   weburl.textContent = business.weburl;
+  weburl.setAttribute("href", business.weburl);
   
   spots[i].appendChild(name);
   spots[i].appendChild(line);
-  spots[i].appendChild(phonenumber);
+  spots[i].appendChild(numberlink);
+  spots[i].appendChild(br);
   spots[i].appendChild(weburl);
 }
 

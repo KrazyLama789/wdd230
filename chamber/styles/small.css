@@ -218,12 +218,17 @@ main .styled-button {
 } 
 
 #spotlights {
-  align-content: space-evenly;
+  font-size: 14px;
   padding: 8px;
 }
 .spots {
   background-color: rgba(2, 50, 70, 0.4);
   border: 1px solid rgb(246, 246, 246);
+}
+.spots a {
+  padding: 5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
 }
 .weather {
   text-align: center;

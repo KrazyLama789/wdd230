@@ -21,7 +21,7 @@
     margin: auto;
   }
   #home section {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
   #home article {
     padding: 1rem;
