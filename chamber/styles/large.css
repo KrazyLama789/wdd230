@@ -20,6 +20,9 @@
     max-width: 1200px;
     margin: auto;
   }
+  main .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   main article {
     padding: 1rem;
   }
