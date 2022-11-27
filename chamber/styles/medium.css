@@ -8,7 +8,7 @@
   main article.hero {
     grid-row: 1;
     grid-column: 1/4;
-    background-image: url("../images/wdd230-org700.jpg");
+    background-image: url("../images/utview700.jpg");
   }
   main #news-release {
     grid-row: 2;

@@ -50,7 +50,7 @@ header {
 #weekly-banner {
   display: none;
   padding: 2vw;
-  background-color: rgba(16, 142, 196, 1);
+  background-color: rgba(16, 142, 196, 0.9);
   color: rgb(246, 246, 246);
   text-align: center;
 }
@@ -205,7 +205,7 @@ main .styled-button {
 /*Home Style*/
 .hero {
   /* background-image: url("../images/t-m-bqGdhrAftLc-unsplash.jpg"); */
-  background-image: url("../images/wdd230-org400.jpg");
+  background-image: url("../images/utview400.jpg");
   background-size: cover;
   /* background-position: top; */
   background-position: 50% 35%;
