@@ -1,2 +1,127 @@
-/* font-family: 'Merienda', cursive;
-font-family: 'Poppins', sans-serif; */
+:root {
+    /* Fonts */
+    --cursive-font: 'Merienda', cursive;
+    font-family: 'Poppins', sans-serif;
+    /* Colors */
+    --custom-white: rgb(244, 245, 246);  /*Name: Cultured. Purpose: Clean background color.*/
+    --custom-grey: rgb(70, 72, 93);      /*Name: Independence. Purpose: Clearly visible contrast color.*/
+    --custom-green: rgb(193, 233, 175);  /*Name: Mantis. Purpose: Lively main style color.*/
+    --custom-yellow: rgb(254, 237, 154); /*Name: Minoin Yellow. Purpose: Bright gentle contrast color.*/
+    --custom-red: rgb(226, 80, 84);      /*Name: Imperial Red. Purpose: Eye catching priority color.*/
+    /* Padding */
+    --custom-spacing: 2vw;
+}
+/* General */
+h1 {
+    font-size: 250%;
+    padding: var(--custom-spacing);
+}
+h1, h2 {
+    font-family: var(--cursive-font);
+    color: var(--custom-grey);
+    text-align: center;
+    background-color: var(--custom-green);
+}
+h1,h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+    color: var(--custom-grey);
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.content-width {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Body */
+body {
+    background-color: var(--custom-white);
+}
+
+/* Header */
+header {
+    background-color: var(--custom-green);
+}
+
+/* Navigation */
+#main-nav {
+    background-color: var(--custom-grey);
+}
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    margin-bottom: var(--custom-spacing);
+}
+#main-nav li {
+    display: inline-block;
+    padding: 10px;
+}
+#main-nav a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--custom-green);
+}
+#main-nav .active a {
+    color: var(--custom-yellow);
+}
+
+/* Main */
+main {
+    padding: var(--custom-spacing);
+    display: grid;
+}
+
+.landing {
+    text-align: center;
+}
+
+#hero {
+    position: relative;
+}
+#hero button {
+    position: absolute;
+    bottom: var(--custom-spacing);
+    right: var(--custom-spacing);
+}
+
+.card {
+    margin: var(--custom-spacing) 0;
+    background-color: lightgray;
+}
+.card h3 {
+    text-align: center;
+    background-color: var(--custom-green);
+}
+.card p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--custom-grey);
+    color: var(--custom-green);
+}
+footer h3 {
+    color: var(--custom-green);
+}
+footer ul {
+    margin: 0;
+}
+footer p {
+    margin: 0;
+    padding: var(--custom-spacing);
+}
+
+/* Home */
+/* Fresh */
+/* About Us */
+/* Attribution */

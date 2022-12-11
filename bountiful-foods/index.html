@@ -27,9 +27,9 @@
 <body id="home">
     <header class="content-width">
         <h1>Bountiful Foods</h1>
-        <nav>
+        <nav id="main-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="attribution.html">Attribution</a></li>
@@ -37,26 +37,31 @@
         </nav>
     </header>
     <main class="content-width">
-        <div>
+        <div class="landing">
             <div id="hero">
+                <img src="images/placeholder-300x400.png" alt="">
                 <button>Design Your Custom Smoothie</button>
             </div>
-            <div>
-                <p>You've made <span>0</span> custome Smoothies</p>
-            </div>
-            <nav class="socials">
-                <ul>
-                    <li><a href="#" class="fa fa-facebook"></a>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                </ul>
-            </nav>
-            <article>
+            <section class="card">
+                <h3>You've made <span>0</span> custome Smoothies</h3>
+            </section>
+            <section class="socials card">
+                <h3>Social Media</h3>
+                <p>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook">Facebook</a>
+                    <a href="https://www.pinterest.com/" class="fa fa-pintrest">Pinterest</a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram">Instagram</a>
+                </p>
+            </section>
+            <section class="card">
                 <h3>Weather</h3>
                 <p>The current weather in Carlsbad California is:</p>
-            </article>
+            </section>
         </div>
         <section>
+            <hr>
             <h2>See Our Locations</h2>
+            <hr>
             <article class="card">
                 <h3>Main Office</h3>
                 <img src="images/placeholder-300x400.png" alt="">
@@ -114,9 +119,42 @@
     <footer class="content-width">
         <div>
             <!-- logo Contact-Info Map-Link-->
+            <section class="contact-us">
+                <h3>Contact Us</h3>
+                <nav>
+                    <ul>
+                        <li>Phone Number: <a href="">+1(234)567-8910</a></li>
+                        <li>Email: <a href="">Email@email.com</a> </li>
+                        <li>Address: <a href="https://goo.gl/maps/tQm65gv11vbDSnSc6">Address St. Carlsbad, CA.</a> </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="locations">
+                <h3>Locations</h3>
+                <nav>
+                    <ul>
+                        <li>Main Location: <a href="https://goo.gl/maps/tQm65gv11vbDSnSc6">Address St. Carlsbad, CA.</a></li>
+                        <li>Food Truck 1: <a href="">Facebook</a> </li>
+                        <li>Food Truck 2: <a href="">Facebook</a> </li>
+                        <li>Food Truck 3: <a href="">Facebook</a> </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="socials">
+                <h3>Social Media</h3>
+                <p>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook">Facebook</a>
+                    <a href="https://www.pinterest.com/" class="fa fa-pintrest">Pinterest</a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram">Instagram</a>
+                </p>
+            </section>
         </div>
-        <div>
-            <!-- Class-Info Date-Modified-->
+        <hr>
+        <div id="class-info">
+            <p>
+                &copy; <span class="currentyear"></span> | Mary Goff | Utah |
+                WDD 230 | Last Updated: <span class="lastupdated"></span>
+            </p>
         </div>
     </footer>
 </body>
