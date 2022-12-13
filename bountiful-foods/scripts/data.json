@@ -1,0 +1,49 @@
+{
+  "fruits": [
+    {
+      "name": "Strawberries",
+      "amount": "1 cup",
+      "calories": "49"
+    },
+    {
+      "name": "Raspberries",
+      "amount":"2/3 cups",
+      "calories": "42"
+    },
+    {
+      "name": "Banana",
+      "amount":"whole",
+      "calories": "105"
+    },
+    {
+      "name": "Blueberries",
+      "amount":"1 cup",
+      "calories": "80"
+    },
+    {
+      "name": "Kale",
+      "amount":"1 cup",
+      "calories": "33"
+    },
+    {
+      "name": "Lemon",
+      "amount":"whole",
+      "calories": "17"
+    },
+    {
+      "name": "Blackberries",
+      "amount":"1 cup",
+      "calories": "62"
+    },
+    {
+      "name": "Mango",
+      "amount":"whole",
+      "calories": "201"
+    },
+    {
+      "name": "Orange",
+      "amount":"whole",
+      "calories": "45"
+    }
+  ]
+}
