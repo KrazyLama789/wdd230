@@ -26,16 +26,21 @@ if (weathercard != null) {
 
   // Update Weather Info
   function displayWeather(weatherData) {
+    const weatherdiv = document.createElement('div');
+    weatherdiv.setAttribute('id', 'currweather');
+
     // Weather Icon
     const weathericon = document.createElement("img");
     const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
     weathericon.setAttribute("src", iconsrc);
+    weathericon.setAttribute('class', 'weathericon');
+    weatherdiv.appendChild(weathericon);
 
     // Temp
     const tempelement = document.createElement("p");
     const temp = weatherData.main.temp;
     tempelement.textContent = `${Math.round(temp)}°`;
-    tempelement.setAttribute('id', 'temp');
+    weatherdiv.appendChild(tempelement);
 
     // Humidity
     const humidityelement = document.createElement("p");
@@ -51,9 +56,10 @@ if (weathercard != null) {
     const threedaydiv = document.createElement("div");
     threedaydiv.setAttribute("id", "threeday");
 
-    weathercard.appendChild(weathericon);
-    weathercard.appendChild(tempelement);
+    weathercard.appendChild(weatherdiv);
     weathercard.appendChild(humidityelement);
+    weathercard.appendChild(document.createElement('hr'));
     weathercard.appendChild(descriptionelement);
+    weathercard.appendChild(document.createElement('hr'));
   }
 }

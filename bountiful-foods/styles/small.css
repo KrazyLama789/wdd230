@@ -105,6 +105,22 @@ main {
     padding: 10px;
 }
 
+.weathericon {
+    max-width: 4rem;
+}
+#weather div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#currweather p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+#weather hr {
+    margin: 0;
+}
+
 /* Footer */
 footer {
     background-color: var(--custom-grey);
