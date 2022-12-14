@@ -80,26 +80,9 @@ main {
     text-align: center;
 }
 
-#hero {
-    position: relative;
-}
-#hero form {
-    position: absolute;
-    bottom: var(--custom-spacing);
-    right: var(--custom-spacing);
-}
-#hero input {
-    background-color: rgb(var(--custom-grey), .9);
-    color: rgb(var(--custom-green));
-    border: none;
-    border-radius: 5px;
-    filter: drop-shadow(0 0 0.3rem rgb(var(--custom-white)));
-    padding: 5px 10px;
-}
-
 .card {
     margin: var(--custom-spacing) 0;
-    background-color: rgba(var(--custom-grey), .2);
+    background-color: rgba(var(--custom-grey), .1);
 }
 .card h3 {
     text-align: center;
@@ -110,22 +93,16 @@ main {
     padding: 10px;
 }
 
-.weathericon {
-    max-width: 4rem;
+a.fa {
+    text-decoration: none;
+    margin: var(--custom-spacing) 5px;
+    background-color: rgb(var(--custom-grey), .9);
+    color: rgb(var(--custom-green), .8);
+    font-size: 2rem;
+    text-align: center;
+    padding: 15px;
+    width: 30px;
 }
-#weather div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#currweather p {
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-#weather hr {
-    margin: 0;
-}
-
 /* Footer */
 footer {
     background-color: rgb(var(--custom-grey), .8);
@@ -146,6 +123,39 @@ footer a {
 }
 
 /* Home */
+#hero {
+    position: relative;
+}
+#hero form {
+    position: absolute;
+    bottom: var(--custom-spacing);
+    right: var(--custom-spacing);
+}
+#hero input {
+    background-color: rgb(var(--custom-grey), .9);
+    color: rgb(var(--custom-green));
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.3rem rgb(var(--custom-white)));
+    padding: 5px 10px;
+}
+
+.weathericon {
+    max-width: 4rem;
+}
+#weather div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#currweather p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+#weather hr {
+    margin: 0;
+}
+
 /* Fresh */
 form {
     color: rgb(var(--custom-grey));
@@ -160,7 +170,7 @@ form label.top {
 form label.top input{
     display: block;
     padding: 5px;
-    border: 2px solid rgb(var(--custom-yellow));
+    border: 2px solid rgb(var(--custom-red), .4);
     color: rgb(var(--custom-grey));
     background-color: rgb(var(--custom-green), .3);
 }
@@ -178,6 +188,39 @@ form input.submitBtn {
 }
 
 /* About Us */
+#about-us .card {
+    text-align: center;
+    font-weight: 600;
+    color: rgb(var(--custom-grey), 1);
+}
+#about-us .card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+#about-us .card ul a {
+    list-style: none;
+    padding: 0;
+    color: rgb(var(--custom-red));
+}
 
+.imagepar {
+    padding: var(--custom-spacing) 0;
+}
+.imagepar p {
+    margin: var(--custom-spacing) 0 0;
+}
+.img-right {
+    display: flex;
+    float: right;
+    max-width: 50%;
+    padding-left: 10px;
+}
+.img-left {
+    display: grid;
+    float: left;
+    max-width: 50%;
+    padding-right: 10px;
+}
 
 /* Attribution */
