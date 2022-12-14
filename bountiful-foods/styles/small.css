@@ -147,12 +147,16 @@ footer a {
     justify-content: center;
     align-items: center;
 }
-#currweather p {
+#weather p {
     font-weight: 600;
+    color: rgb(var(--custom-grey));
+}
+#currweather p {
     font-size: 1.5rem;
 }
 #weather hr {
     margin: 0;
+    color: rgb(var(--custom-grey));
 }
 
 /* Fresh */

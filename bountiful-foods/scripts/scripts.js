@@ -4,28 +4,34 @@ document.querySelector(".lastupdated").textContent = document.lastModified;
 // Weather Information.
 const weathercard = document.querySelector("#weather");
 if (weathercard != null) {
-  const url =
+  const url1 =
     "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=9142126509452033b4de92f3c993180f&units=imperial";
+  const url2 =
+    "https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&cnt=3&appid=9142126509452033b4de92f3c993180f&units=imperial";
 
-  async function apiFetch() {
+  async function apiFetch(url1, url2) {
     try {
-      const response = await fetch(url);
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data);
-        displayWeather(data);
+      const response1 = await fetch(url1);
+      const response2 = await fetch(url2);
+
+      if (response1.ok && response2.ok) {
+        const data1 = await response1.json();
+        const data2 = await response2.json();
+        console.log(data1);
+        console.log(data2);
+        displayWeather(data1, data2);
       } else {
-        throw Error(await response.text());
+        throw Error(await response1.text(), await response2.text());
       }
     } catch (error) {
       console.log(error);
     }
   }
 
-  apiFetch();
+  apiFetch(url1, url2);
 
   // Update Weather Info
-  function displayWeather(weatherData) {
+  function displayWeather(weatherData, forecastData) {
     const weatherdiv = document.createElement("div");
     weatherdiv.setAttribute("id", "currweather");
 
@@ -47,49 +53,62 @@ if (weathercard != null) {
     const humidity = weatherData.main.humidity;
     humidityelement.textContent = `Humidity: ${humidity}%`;
 
-    // Forcast Description
+    // Weather Condition Description
     const descriptionelement = document.createElement("p");
     const description = weatherData.weather[0].description;
     descriptionelement.textContent = description;
     weathericon.setAttribute("alt", description);
 
+    // Three Day Forecast
+    const heading = document.createElement('h3');
+    heading.textContent = 'Three Day forecast';
     const threedaydiv = document.createElement("div");
     threedaydiv.setAttribute("id", "threeday");
 
+    weathercard.appendChild(descriptionelement);
     weathercard.appendChild(weatherdiv);
     weathercard.appendChild(humidityelement);
     weathercard.appendChild(document.createElement("hr"));
-    weathercard.appendChild(descriptionelement);
+    weathercard.appendChild(heading)
     weathercard.appendChild(document.createElement("hr"));
+    weathercard.appendChild(threedaydiv)
+
+    // Daily High Low
+    const forecast = forecastData.list;
+    for (let i = 0; i < forecast.length; i++) {
+      const dailytemp = document.createElement('p');
+      dailytemp.textContent = `High ${Math.round(forecast[i].main.temp_max)}/${Math.round(forecast[i].main.temp_min)} Low`;
+      threedaydiv.appendChild(dailytemp);
+    };
   }
 }
 
 // Locations
-const locationsection = document.querySelector('#locations');
+const locationsection = document.querySelector("#locations");
 
 if (locationsection != null) {
   fetch("scripts/data.json")
-  .then((response) => response.json())
-  .then(function (jsonObject) {
-    const locationlist = jsonObject["locations"];
-    console.table(jsonObject); // temporary checking for valid response and data parsing
+    .then((response) => response.json())
+    .then(function (jsonObject) {
+      const locationlist = jsonObject["locations"];
+      // console.table(jsonObject); // temporary checking for valid response and data parsing
 
-    locationlist.forEach(displayLocations);
-  });
+      locationlist.forEach(displayLocations);
+    });
 
   function displayLocations(locationlist) {
-    const article = document.createElement('article');
-    article.setAttribute('class', 'card');
+    const article = document.createElement("article");
+    article.setAttribute("class", "card");
 
-    const heading = document.createElement('h3');
+    const heading = document.createElement("h3");
     heading.textContent = locationlist.name;
 
-    const image = document.createElement('img');
+    const image = document.createElement("img");
     image.setAttribute("src", locationlist.image);
     image.setAttribute("alt", locationlist.imagedata);
     image.setAttribute("loading", "lazy");
 
-    const paragraph = document.createElement('p');
+    const paragraph = document.createElement("p");
     paragraph.textContent = locationlist.info;
 
     article.appendChild(heading);
