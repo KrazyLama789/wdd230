@@ -3,11 +3,11 @@
     --cursive-font: 'Merienda', cursive;
     font-family: 'Poppins', sans-serif;
     /* Colors */
-    --custom-white: rgb(244, 245, 246);  /*Name: Cultured. Purpose: Clean background color.*/
-    --custom-grey: rgb(70, 72, 93);      /*Name: Independence. Purpose: Clearly visible contrast color.*/
-    --custom-green: rgb(193, 233, 175);  /*Name: Mantis. Purpose: Lively main style color.*/
-    --custom-yellow: rgb(254, 237, 154); /*Name: Minoin Yellow. Purpose: Bright gentle contrast color.*/
-    --custom-red: rgb(226, 80, 84);      /*Name: Imperial Red. Purpose: Eye catching priority color.*/
+    --custom-white: 244, 245, 246;  /*Name: Cultured. Purpose: Clean background color.*/
+    --custom-grey: 70, 72, 93;      /*Name: Independence. Purpose: Clearly visible contrast color.*/
+    --custom-green: 193, 233, 175;  /*Name: Mantis. Purpose: Lively main style color.*/
+    --custom-yellow: 254, 237, 154; /*Name: Minoin Yellow. Purpose: Bright gentle contrast color.*/
+    --custom-red: 226, 80, 84;      /*Name: Imperial Red. Purpose: Eye catching priority color.*/
     /* Padding */
     --custom-spacing: 2vw;
 }
@@ -18,14 +18,14 @@ h1 {
 }
 h1, h2 {
     font-family: var(--cursive-font);
-    color: var(--custom-grey);
+    color: rgb(var(--custom-grey));
     text-align: center;
-    background-color: var(--custom-green);
+    background-color: rgb(var(--custom-green), .8);
 }
 h1,h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: 600;
-    color: var(--custom-grey);
+    color: rgb(var(--custom-grey));
     padding: 10px;
 }
 
@@ -40,17 +40,14 @@ img {
 
 /* Body */
 body {
-    background-color: var(--custom-white);
+    background-color: rgb(var(--custom-white));
 }
 
 /* Header */
-header {
-    background-color: var(--custom-green);
-}
 
 /* Navigation */
 #main-nav {
-    background-color: var(--custom-grey);
+    background-color: rgb(var(--custom-grey));
 }
 #main-nav ul {
     list-style: none;
@@ -67,10 +64,10 @@ header {
 #main-nav a {
     font-weight: 600;
     text-decoration: none;
-    color: var(--custom-green);
+    color: rgb(var(--custom-green));
 }
 #main-nav .active a {
-    color: var(--custom-yellow);
+    color: rgb(var(--custom-yellow));
 }
 
 /* Main */
@@ -86,19 +83,27 @@ main {
 #hero {
     position: relative;
 }
-#hero button {
+#hero form {
     position: absolute;
     bottom: var(--custom-spacing);
     right: var(--custom-spacing);
 }
+#hero input {
+    background-color: rgb(var(--custom-grey), .9);
+    color: rgb(var(--custom-green));
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.3rem rgb(var(--custom-white)));
+    padding: 5px 10px;
+}
 
 .card {
     margin: var(--custom-spacing) 0;
-    background-color: lightgray;
+    background-color: rgba(var(--custom-grey), .2);
 }
 .card h3 {
     text-align: center;
-    background-color: var(--custom-green);
+    background-color: rgb(var(--custom-green));
 }
 .card p {
     margin: 0;
@@ -123,11 +128,11 @@ main {
 
 /* Footer */
 footer {
-    background-color: var(--custom-grey);
-    color: var(--custom-green);
+    background-color: rgb(var(--custom-grey), .7);
+    color: rgb(var(--custom-green));
 }
 footer h3 {
-    color: var(--custom-green);
+    color: rgb(var(--custom-green));
 }
 footer ul {
     margin: 0;
@@ -135,6 +140,9 @@ footer ul {
 footer p {
     margin: 0;
     padding: var(--custom-spacing);
+}
+footer a {
+    color: rgb(var(--custom-yellow));
 }
 
 /* Home */
