@@ -55,7 +55,6 @@ body {
     justify-content: space-evenly;
     padding: 0;
     margin: 0;
-    margin-bottom: var(--custom-spacing);
 }
 #main-nav li {
     display: inline-block;
