@@ -53,7 +53,7 @@
       "map-url": "https://goo.gl/maps/tQm65gv11vbDSnSc6",
       "image": "images/mainshop.jpg",
       "imagedata": "Three shelves line with baskets of produce",
-      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada lectus quis dolor suscipit, vitae dignissim nulla dignissim. In eu tempus enim. Duis leo nulla, egestas sollicitudin dictum id, egestas vitae enim. Mauris"
+      "info": "Coastal Carlsbad Village is known for Carlsbad State Beach, popular for swimming and surfing, with a path leading to an overlook for sunset watching and dolphin spotting. Migratory and native birds nest among the reeds in the Buena Vista Lagoon. International eateries, al fresco cafes, and Irish pubs dot the streets in town, where the State Street Farmers Market sells local produce and artisanal delicacies. ― Google"
     },
     {
       "name": "La Jolla Shores",
@@ -61,7 +61,7 @@
       "map-url": "https://goo.gl/maps/DyDk3wKD3JBBaKdM9",
       "image": "images/truck1.jpg",
       "imagedata": "Red food-truck displaying produce to people",
-      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada lectus quis dolor suscipit, vitae dignissim nulla dignissim. In eu tempus enim. Duis leo nulla, egestas sollicitudin dictum id, egestas vitae enim. Mauris"
+      "info": "La Jolla Shores, with its northern part Scripps Beach, is a beach and vacation/residential community of the same name in La Jolla, San Diego, California. The La Jolla Shores business district is a mixed-use village encircling Laureate Park on Avenida de la Playa in the village of La Jolla Shores. ― Wiki"
     },
     {
       "name": "Down Town",
@@ -69,15 +69,15 @@
       "map-url": "https://goo.gl/maps/CQZgjE8HKituKkWK7",
       "image": "images/truck2.jpg",
       "imagedata": "A walk-in mobile produce shop with shelve of produce",
-      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada lectus quis dolor suscipit, vitae dignissim nulla dignissim. In eu tempus enim. Duis leo nulla, egestas sollicitudin dictum id, egestas vitae enim. Mauris"
+      "info": "Huntington Beach boasts the largest unspoiled coastal wetlands in California. The Huntington Beach Pier is the second most popular sight here, after the beach itself. Main Street is a shopping and gathering place for residents and tourists alike, with sidewalk cafes, surf shops and live music all vying for attention."
     },
     {
-      "name": "City Place",
+      "name": "The Pike Outlets",
       "location": "Long Beach",
-      "map-url": "https://goo.gl/maps/53LFPrupWtKKpRfm9",
+      "map-url": "https://goo.gl/maps/e4CxJq31D8h5PqHb6",
       "image": "images/truck3.jpg",
       "imagedata": "A food truck displaying produce in square crate baskets",
-      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada lectus quis dolor suscipit, vitae dignissim nulla dignissim. In eu tempus enim. Duis leo nulla, egestas sollicitudin dictum id, egestas vitae enim. Mauris"
+      "info": "The Pike Outlets is a waterfront entertainment district that boasts restaurants, nightlife venues, a theater, and a Ferris wheel."
     }
   ]
 }
