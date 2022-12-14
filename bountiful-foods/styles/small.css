@@ -128,7 +128,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: rgb(var(--custom-grey), .7);
+    background-color: rgb(var(--custom-grey), .8);
     color: rgb(var(--custom-green));
 }
 footer h3 {
@@ -147,5 +147,37 @@ footer a {
 
 /* Home */
 /* Fresh */
+form {
+    color: rgb(var(--custom-grey));
+    font-weight: 600;
+    font-family: var(--cursive-font);
+}
+form label.top {
+    display: block;
+    padding: 1rem 0 .4rem;
+    font-weight: 600;
+}
+form label.top input{
+    display: block;
+    padding: 5px;
+    border: 2px solid rgb(var(--custom-yellow));
+    color: rgb(var(--custom-grey));
+    background-color: rgb(var(--custom-green), .3);
+}
+form input.submitBtn {
+    border: none;
+    background-color: rgb(var(--custom-green));
+    color: rgb(var(--custom-grey));
+    font-family: var(--cursive-font);
+    font-weight: 600;
+    border-radius: .5rem;
+    padding: .75rem;
+    margin: 2% 0;
+    width: 100%;
+    max-width: 20rem;
+}
+
 /* About Us */
+
+
 /* Attribution */
