@@ -45,5 +45,35 @@
       "amount":"whole",
       "calories": "45"
     }
+  ],
+  "locations": [
+    {
+      "name": "Carlsbad Village",
+      "location": "Carlsbad",
+      "map-url": "https://goo.gl/maps/tQm65gv11vbDSnSc6",
+      "image": "../images/mainshop.jpg",
+      "info": ""
+    },
+    {
+      "name": "La Jolla Shores",
+      "location": "San Diego",
+      "map-url": "https://goo.gl/maps/DyDk3wKD3JBBaKdM9",
+      "image": "../images/truck1.jpg",
+      "info": ""
+    },
+    {
+      "name": "Down Town",
+      "location": "Huntington Beach",
+      "map-url": "https://goo.gl/maps/CQZgjE8HKituKkWK7",
+      "image": "../images/truck2.jpg",
+      "info": ""
+    },
+    {
+      "name": "City Place",
+      "location": "Long Beach",
+      "map-url": "https://goo.gl/maps/53LFPrupWtKKpRfm9",
+      "image": "../images/truck3.jpg",
+      "info": ""
+    }
   ]
 }
