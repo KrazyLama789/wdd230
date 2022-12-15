@@ -161,10 +161,12 @@ footer a {
 }
 
 /* Fresh */
+
 form {
     color: rgb(var(--custom-grey));
     font-weight: 600;
     font-family: var(--cursive-font);
+    margin: var(--custom-spacing) 0;
 }
 form label.top {
     display: block;
@@ -177,6 +179,9 @@ form label.top input{
     border: 2px solid rgb(var(--custom-red), .4);
     color: rgb(var(--custom-grey));
     background-color: rgb(var(--custom-green), .3);
+}
+form label.sbs {
+    display: block;
 }
 form input.submitBtn {
     border: none;
@@ -226,5 +231,3 @@ form input.submitBtn {
     max-width: 50%;
     padding-right: 10px;
 }
-
-/* Attribution */

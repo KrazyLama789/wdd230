@@ -181,7 +181,6 @@ if (ing != null)
   function displayIngredients(ingredient) {
     const label = document.createElement("label");
     label.setAttribute("class", "sbs");
-    label.textContent += `${ingredient.name} `;
 
     const input = document.createElement("input");
     input.setAttribute("type", "checkbox");
@@ -196,6 +195,7 @@ if (ing != null)
     input.setAttribute("onclick", `verify(${ingredient.number})`);
 
     label.appendChild(input);
+    label.append(` ${ingredient.name}`);
     ing.appendChild(label);
   }
 
@@ -224,6 +224,7 @@ if (ing != null)
   function displaySubmition() {
     // Section
     const mix = document.querySelector(".mix");
+    
 
     const name = document.createElement("p");
     name.textContent = document.querySelector('input[name="fname"]').value;
