@@ -231,24 +231,41 @@ if (ing != null);
     instruct.textContent = document.querySelector('input[name="instruct"]').value;
     mix.appendChild(instruct);
   
-    const carbs = document.createElement('p');
-    carbs.textContent = 0
-    const protein = document.createElement('p');
-    protein.textContent = 0
-    const fat = document.createElement('p');
-    fat.textContent = 0
-    const sugar = document.createElement('p');
-    sugar.textContent = 0
-    const calories = document.createElement('p');
-    calories.textContent = 0
+    const totalcarbs = document.createElement('p');
+    var carbs = 0;
+    const totalprotein = document.createElement('p');
+    var protein = 0
+    const totalfat = document.createElement('p');
+    var fat = 0
+    const totalsugar = document.createElement('p');
+    var sugar = 0
+    const totalcalories = document.createElement('p');
+    var calories = 0
 
     // List of checked items
     const ings = document.querySelectorAll('input:checked');
     ings.forEach((ing) => {
-      ingredient = document.createElement('p');
+      const ingredient = document.createElement('p');
       ingredient.textContent = ing.getAttribute("ingname");
       mix.appendChild(ingredient);
+
+      carbs += Number(ing.getAttribute('carbs'));
+      protein += Number(ing.getAttribute('protein'));
+      fat += Number(ing.getAttribute('fat'));
+      sugar += Number(ing.getAttribute('sugar'));
+      calories += Number(ing.getAttribute('calories'));
     });
+
+    totalcarbs.textContent = `Carbohydrates: ${Math.round(carbs * 10) / 10} g`;
+    mix.appendChild(totalcarbs);
+    totalprotein.textContent = `Protein: ${Math.round(protein * 10) / 10} g`;
+    mix.appendChild(totalprotein);
+    totalfat.textContent = `Fat: ${Math.round(fat * 10) / 10} g`;
+    mix.appendChild(totalfat);
+    totalsugar.textContent = `Sugar: ${Math.round(sugar * 10) / 10} g`;
+    mix.appendChild(totalsugar);
+    totalcalories.textContent = `Calories: ${Math.round(calories * 10) / 10}`;
+    mix.appendChild(totalcalories);
 
     // the input values of the order (7 inputs = first name, email, 
     // phone, three selected fruits, and special instructions),
