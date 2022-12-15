@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Scripts-->
     <script src="scripts/scripts.js" defer></script>
@@ -40,7 +40,11 @@
     <main class="content-width">
         <div class="landing">
             <div id="hero">
-                <img src="images/placeholder-300x400.png" data-src="images/juice.png" alt="Juices surrounded by fruit">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="images/juice.jpg">
+                    <source media="(min-width: 600px)" srcset="images/juice350.jpg">
+                    <img src="images/juice500.jpg" alt="bottles of juice surrounded by fruit">
+                </picture>
                 <form action="fresh.html">
                     <input type="submit" value="Design Your Custom Smoothie">
                 </form>

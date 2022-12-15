@@ -172,6 +172,7 @@ form label.top {
     display: block;
     padding: 1rem 0 .4rem;
     font-weight: 600;
+    padding: .75rem;
 }
 form label.top input{
     display: block;
@@ -182,6 +183,10 @@ form label.top input{
 }
 form label.sbs {
     display: block;
+    padding: .75rem 0;
+}
+.biginput {
+    color: black;
 }
 form input.submitBtn {
     border: none;
