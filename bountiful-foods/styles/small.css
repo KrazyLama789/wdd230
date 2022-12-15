@@ -131,12 +131,12 @@ footer a {
     right: var(--custom-spacing);
 }
 #hero input {
-    background-color: rgb(var(--custom-grey), .9);
+    background-color: rgb(var(--custom-grey));
     color: rgb(var(--custom-green));
     border: none;
     border-radius: 5px;
-    filter: drop-shadow(0 0 0.3rem rgb(var(--custom-white)));
-    padding: 5px 10px;
+    filter: drop-shadow(0 0 0.3rem rgb(var(--custom-grey)));
+    padding: 7px 10px;
 }
 
 .weathericon {

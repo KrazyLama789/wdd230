@@ -1,46 +1,55 @@
 {
-  "fruits": [
+  "ingredients": [
     {
+      "number": 0,
       "name": "Strawberries",
       "amount": "1 cup",
       "calories": "49"
     },
     {
+      "number": 1,
       "name": "Raspberries",
       "amount": "2/3 cups",
       "calories": "42"
     },
     {
+      "number": 2,
       "name": "Banana",
       "amount": "whole",
       "calories": "105"
     },
     {
+      "number": 3,
       "name": "Blueberries",
       "amount": "1 cup",
       "calories": "80"
     },
     {
+      "number": 4,
       "name": "Kale",
       "amount": "1 cup",
       "calories": "33"
     },
     {
+      "number": 5,
       "name": "Lemon",
       "amount": "whole",
       "calories": "17"
     },
     {
+      "number": 6,
       "name": "Blackberries",
       "amount": "1 cup",
       "calories": "62"
     },
     {
+      "number": 7,
       "name": "Mango",
       "amount": "whole",
       "calories": "201"
     },
     {
+      "number": 8,
       "name": "Orange",
       "amount": "whole",
       "calories": "45"

@@ -38,9 +38,13 @@
         </nav>
     </header>
     <main class="content-width">
+        <section class="hidden mix">
+            <h2>Your Custom Mix:</h2>
+        </section>
         <section>
             <h2>Mixology Shop</h2>
-            <form action="fresh.html">
+            
+            <form action="scripts/scripts.js" onsubmit="return validateForm()">
                 <fieldset>
                     <legend>Your Custom Drink</legend>
                     <label class="top">First name*<input type="text" name="fname" required></label>
@@ -50,11 +54,12 @@
                             required></label>
 
                     <hr>
-                    <label class="sbs"><input type="radio" name="fruit1" value="fruit1"> Fruit1</label>
+                    <fieldset id="ing">
+                        <legend>Choose Your 3 Ingredients</legend>
+                    </fieldset>
                     <hr>
-                    <label class="sbs"><input type="radio" name="fruit1" value="fruit1"> Fruit1</label>
-                    <hr>
-                    <label class="sbs"><input type="radio" name="fruit1" value="fruit1"> Fruit1</label>
+
+                    <label class="top">Special Instructions<input type="text" name="instruct"></label>
                 </fieldset>
                 <label><input type="submit" value="Make My Smoothie" class="submitBtn"></label>
             </form>
@@ -77,10 +82,14 @@
                 <h3>Locations</h3>
                 <nav>
                     <ul>
-                        <li>Main Location: <a href="https://goo.gl/maps/tQm65gv11vbDSnSc6">Carlsbad Village, Carlsbad</a></li>
-                        <li>Food Truck 1: <a href="https://goo.gl/maps/DyDk3wKD3JBBaKdM9">La Jolla Shores, San Diego</a></li>
-                        <li>Food Truck 2: <a href="https://goo.gl/maps/CQZgjE8HKituKkWK7">Down Town, Huntington Beach</a> </li>
-                        <li>Food Truck 3: <a href="https://goo.gl/maps/e4CxJq31D8h5PqHb6">The Pike Outlets, Long Beach</a> </li>
+                        <li>Main Location: <a href="https://goo.gl/maps/tQm65gv11vbDSnSc6">Carlsbad Village,
+                                Carlsbad</a></li>
+                        <li>Food Truck 1: <a href="https://goo.gl/maps/DyDk3wKD3JBBaKdM9">La Jolla Shores, San Diego</a>
+                        </li>
+                        <li>Food Truck 2: <a href="https://goo.gl/maps/CQZgjE8HKituKkWK7">Down Town, Huntington
+                                Beach</a> </li>
+                        <li>Food Truck 3: <a href="https://goo.gl/maps/e4CxJq31D8h5PqHb6">The Pike Outlets, Long
+                                Beach</a> </li>
                     </ul>
                 </nav>
             </section>
