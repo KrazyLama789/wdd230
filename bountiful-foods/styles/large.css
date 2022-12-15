@@ -1,0 +1,16 @@
+/*62rem is also 992px when basefont is 16px*/
+@media only screen and (min-width: 62rem) {
+  h1 {
+    font-size: 5rem;
+  }
+  body {
+    font-size: 24px;
+  }
+  .content-width {
+    max-width: 95%;
+  }
+
+  #locations {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

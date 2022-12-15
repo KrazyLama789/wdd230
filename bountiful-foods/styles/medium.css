@@ -1,9 +1,26 @@
+/*35rem is also 608px when basefont is 16px*/
 @media only screen and (min-width: 38rem) {
-    :root {
-        --custom-spacing: 1vw;
-    }
-/* 
-    body {
-        background-color: red;
-    }; */
+  :root {
+    --custom-spacing: 1vw;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  .content-width {
+    max-width: 62rem;
+  }
+
+  .landing {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+
+  #locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--custom-spacing);
+  }
 }

@@ -80,7 +80,7 @@ main {
 }
 
 .card {
-    margin: var(--custom-spacing) 0;
+    margin: 0 0 var(--custom-spacing) 0;
     background-color: rgba(var(--custom-grey), .1);
 }
 .card h3 {
@@ -124,6 +124,7 @@ footer a {
 /* Home */
 #hero {
     position: relative;
+    min-width: 64%;
 }
 #hero form {
     position: absolute;
