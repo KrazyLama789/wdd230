@@ -4,55 +4,91 @@
       "number": 0,
       "name": "Strawberries",
       "amount": "1 cup",
-      "calories": "49"
+      "carbs": 12,
+      "protein": 1,
+      "fat": 0.5,
+      "sugar": 7,
+      "calories": 49
     },
     {
       "number": 1,
       "name": "Raspberries",
-      "amount": "2/3 cups",
-      "calories": "42"
+      "amount": "1 cup",
+      "carbs": 15,
+      "protein": 1.5,
+      "fat": 0.8,
+      "sugar": 5,
+      "calories": 65
     },
     {
       "number": 2,
       "name": "Banana",
       "amount": "whole",
-      "calories": "105"
+      "carbs": 27,
+      "protein": 1.3,
+      "fat": 0.4,
+      "sugar": 14,
+      "calories": 105
     },
     {
       "number": 3,
-      "name": "Blueberries",
+      "name": "Blackberries",
       "amount": "1 cup",
-      "calories": "80"
+      "carbs": 14,
+      "protein": 2,
+      "fat": 0.7,
+      "sugar": 7,
+      "calories": 62
     },
     {
       "number": 4,
       "name": "Kale",
       "amount": "1 cup",
-      "calories": "33"
+      "carbs": 6,
+      "protein": 2.9,
+      "fat": 0.6,
+      "sugar": 1.6,
+      "calories": 33
     },
     {
       "number": 5,
       "name": "Lemon",
       "amount": "whole",
-      "calories": "17"
+      "carbs": 5,
+      "protein": 0.6,
+      "fat": 0.2,
+      "sugar": 1.5,
+      "calories": 17
     },
     {
       "number": 6,
-      "name": "Blackberries",
+      "name": "Blueberries",
       "amount": "1 cup",
-      "calories": "62"
+      "carbs": 21,
+      "protein": 1.07,
+      "fat": 0.48,
+      "sugar": 15,
+      "calories": 80
     },
     {
       "number": 7,
       "name": "Mango",
       "amount": "whole",
-      "calories": "201"
+      "carbs": 50,
+      "protein": 2.8,
+      "fat": 1.3,
+      "sugar": 46,
+      "calories": 201
     },
     {
       "number": 8,
       "name": "Orange",
       "amount": "whole",
-      "calories": "45"
+      "carbs": 22,
+      "protein": 1.7,
+      "fat": 0.2,
+      "sugar": 17,
+      "calories": 87
     }
   ],
   "locations": [

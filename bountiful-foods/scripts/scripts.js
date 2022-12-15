@@ -165,19 +165,25 @@ if (ing != null);
       const ingredients = jsonObject["ingredients"];
       // console.table(jsonObject); // temporary checking for valid response and data parsing
 
-      ingredients.forEach(displayIngredients);
+      ingredients.forEach((ingredient) => displayIngredients(ingredient));
     });
 
-  function displayIngredients(ingredients) {
+  function displayIngredients(ingredient) {
     const label = document.createElement("label");
     label.setAttribute("class", "sbs");
-    label.textContent += `${ingredients.name} `;
+    label.textContent += `${ingredient.name} `;
 
     const input = document.createElement("input");
     input.setAttribute("type", "checkbox");
     input.setAttribute("name", "checkbox");
-    input.setAttribute("value", ingredients.number);
-    input.setAttribute("onclick", `verify(${ingredients.number})`);
+    input.setAttribute("value", ingredient.number);
+    input.setAttribute("ingname", ingredient.name);
+    input.setAttribute("carbs", ingredient.carbs);
+    input.setAttribute("protein", ingredient.protein);
+    input.setAttribute("fat", ingredient.fat);
+    input.setAttribute("sugar", ingredient.sugar);
+    input.setAttribute("calories", ingredient.calories);
+    input.setAttribute("onclick", `verify(${ingredient.number})`);
 
     label.appendChild(input);
     ing.appendChild(label);
@@ -224,12 +230,23 @@ if (ing != null);
     const instruct = document.createElement('p');
     instruct.textContent = document.querySelector('input[name="instruct"]').value;
     mix.appendChild(instruct);
+  
+    const carbs = document.createElement('p');
+    carbs.textContent = 0
+    const protein = document.createElement('p');
+    protein.textContent = 0
+    const fat = document.createElement('p');
+    fat.textContent = 0
+    const sugar = document.createElement('p');
+    sugar.textContent = 0
+    const calories = document.createElement('p');
+    calories.textContent = 0
 
     // List of checked items
     const ings = document.querySelectorAll('input:checked');
     ings.forEach((ing) => {
-      ingredient = document.createElement('p')
-      ingredient.textContent = ing.value;
+      ingredient = document.createElement('p');
+      ingredient.textContent = ing.getAttribute("ingname");
       mix.appendChild(ingredient);
     });
 
