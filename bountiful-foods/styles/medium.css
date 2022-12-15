@@ -17,6 +17,10 @@
     grid-template-columns: 2fr 1fr;
     gap: 10px;
   }
+  
+  #home .landing {
+    align-items: center;
+  }
 
 
   #locations {
