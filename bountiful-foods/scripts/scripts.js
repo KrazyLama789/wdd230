@@ -1,6 +1,16 @@
 // Timestamp of "Last Updated".
 document.querySelector(".lastupdated").textContent = document.lastModified;
 
+// Drink Display
+const mixcountspan = document.querySelector("#mixcount span");
+if (mixcountspan != null) {
+  const mixcount = localStorage.getItem("order-count");
+
+  if (mixcount != null) {
+    mixcountspan.textContent = mixcount;
+  }
+}
+
 // Weather Information.
 const weathercard = document.querySelector("#weather");
 if (weathercard != null) {
@@ -157,7 +167,7 @@ if (imagesToLoad != null) {
 // Drink Form
 const ing = document.querySelector("#ing");
 
-if (ing != null);
+if (ing != null)
 {
   fetch("scripts/data.json")
     .then((response) => response.json())
@@ -213,49 +223,52 @@ if (ing != null);
 
   function displaySubmition() {
     // Section
-    const mix = document.querySelector('.mix');
+    const mix = document.querySelector(".mix");
 
-    const name = document.createElement('p');
+    const name = document.createElement("p");
     name.textContent = document.querySelector('input[name="fname"]').value;
     mix.appendChild(name);
 
-    const email = document.createElement('p');
+    const email = document.createElement("p");
     email.textContent = document.querySelector('input[name="email"]').value;
     mix.appendChild(email);
 
-    const phone = document.createElement('p');
+    const phone = document.createElement("p");
     phone.textContent = document.querySelector('input[name="phone"]').value;
     mix.appendChild(phone);
 
-    const instruct = document.createElement('p');
-    instruct.textContent = document.querySelector('input[name="instruct"]').value;
+    const instruct = document.createElement("p");
+    instruct.textContent = document.querySelector(
+      'input[name="instruct"]'
+    ).value;
     mix.appendChild(instruct);
-  
-    const totalcarbs = document.createElement('p');
+
+    const totalcarbs = document.createElement("p");
     var carbs = 0;
-    const totalprotein = document.createElement('p');
-    var protein = 0
-    const totalfat = document.createElement('p');
-    var fat = 0
-    const totalsugar = document.createElement('p');
-    var sugar = 0
-    const totalcalories = document.createElement('p');
-    var calories = 0
+    const totalprotein = document.createElement("p");
+    var protein = 0;
+    const totalfat = document.createElement("p");
+    var fat = 0;
+    const totalsugar = document.createElement("p");
+    var sugar = 0;
+    const totalcalories = document.createElement("p");
+    var calories = 0;
 
     // List of checked items
-    const ings = document.querySelectorAll('input:checked');
+    const ings = document.querySelectorAll("input:checked");
     ings.forEach((ing) => {
-      const ingredient = document.createElement('p');
+      const ingredient = document.createElement("p");
       ingredient.textContent = ing.getAttribute("ingname");
       mix.appendChild(ingredient);
 
-      carbs += Number(ing.getAttribute('carbs'));
-      protein += Number(ing.getAttribute('protein'));
-      fat += Number(ing.getAttribute('fat'));
-      sugar += Number(ing.getAttribute('sugar'));
-      calories += Number(ing.getAttribute('calories'));
+      carbs += Number(ing.getAttribute("carbs"));
+      protein += Number(ing.getAttribute("protein"));
+      fat += Number(ing.getAttribute("fat"));
+      sugar += Number(ing.getAttribute("sugar"));
+      calories += Number(ing.getAttribute("calories"));
     });
 
+    // Nutritional Fact Content
     totalcarbs.textContent = `Carbohydrates: ${Math.round(carbs * 10) / 10} g`;
     mix.appendChild(totalcarbs);
     totalprotein.textContent = `Protein: ${Math.round(protein * 10) / 10} g`;
@@ -267,11 +280,21 @@ if (ing != null);
     totalcalories.textContent = `Calories: ${Math.round(calories * 10) / 10}`;
     mix.appendChild(totalcalories);
 
-    // the input values of the order (7 inputs = first name, email, 
-    // phone, three selected fruits, and special instructions),
-    // the order date, and
-    // the total amount of carbohydrates, protein, fat, sugar, and calories 
-    // based upon the three fruit choices selected on the form. Again, use the JSON fruit 
-    // data to extract and sum up that information.
+    // Order Date
+    const orderdate = document.createElement("p");
+    const date = new Date();
+    orderdate.textContent = new Intl.DateTimeFormat("en-UK", {
+      dateStyle: "full",
+    }).format(date);
+    mix.appendChild(orderdate);
+
+    // Store Order Count
+    var ordercount = localStorage.getItem("order-count");
+    console.log(ordercount);
+    if (ordercount == null) {
+      ordercount = 0;
+    }
+    ordercount++;
+    localStorage.setItem("order-count", ordercount);
   }
 }
